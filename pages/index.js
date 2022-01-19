@@ -1,5 +1,9 @@
 import Image from "next/image";
 import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
+import { useRouter } from "next/router";
+import { useDispatch } from "react-redux";
+
+import { login } from "../slices/authSlice";
 
 import styles from "../styles/Home.module.scss";
 
@@ -9,12 +13,15 @@ import logo from "../public/evernote-icon.svg";
 export default function Home() {
   const auth = getAuth();
   const provider = new GoogleAuthProvider();
+  const router = useRouter();
+  const dispatch = useDispatch();
 
   const clickHandler = () => {
     signInWithPopup(auth, provider)
       .then((result) => {
         const { uid, email, photoURL, displayName } = result.user;
-        console.log(uid, email, photoURL, displayName);
+        dispatch(login({ uid, email, photoURL, displayName }));
+        router.push("/notes");
       })
       .catch((error) => console.log(error));
   };
