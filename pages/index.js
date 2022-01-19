@@ -2,6 +2,7 @@ import Image from "next/image";
 
 import styles from "../styles/Home.module.scss";
 
+import Button from "../components/Button";
 import logo from "../public/evernote-icon.svg";
 
 export default function Home() {
@@ -19,6 +20,7 @@ export default function Home() {
         <h2 className={styles.container__tagline}>
           Remember everything important.
         </h2>
+        <Button color="green" />
       </article>
     </main>
   );

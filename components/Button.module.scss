@@ -1,0 +1,20 @@
+.btn {
+  padding: 1rem 3rem;
+  outline: none;
+  border: none;
+  border-radius: 0.5rem;
+  margin: 3rem 0;
+  cursor: pointer;
+  width: 90%;
+  max-width: 25rem;
+  font-size: 1.7rem;
+}
+
+.btn--green {
+  background-color: #00a82d;
+  color: #fff;
+}
+
+.btn--green:hover {
+  background-color: #008f26;
+}
