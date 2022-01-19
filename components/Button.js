@@ -2,9 +2,12 @@ import React from "react";
 
 import styles from "./Button.module.scss";
 
-function Button({ color }) {
+function Button({ color, onClick }) {
   return (
-    <button className={`${styles.btn} ${styles[`btn--${color}`]}`}>
+    <button
+      onClick={onClick}
+      className={`${styles.btn} ${styles[`btn--${color}`]}`}
+    >
       Continue
     </button>
   );

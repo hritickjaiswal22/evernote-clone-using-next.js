@@ -1,9 +1,13 @@
 import Head from "next/head";
 import { Fragment } from "react";
+import { initializeApp } from "firebase/app";
+
+import { firebaseConfig } from "../firebase/firebaseConfig";
 
 import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }) {
+  initializeApp(firebaseConfig);
   return (
     <Fragment>
       <Head>
