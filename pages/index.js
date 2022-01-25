@@ -40,7 +40,7 @@ export default function Home() {
         <h2 className={styles.container__tagline}>
           Remember everything important.
         </h2>
-        <Button onClick={clickHandler} color="green" />
+        <Button onClick={clickHandler} color="green" content="Continue" />
       </article>
     </main>
   );

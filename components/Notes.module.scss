@@ -1,0 +1,43 @@
+.emptyHeading {
+  width: fit-content;
+  margin: 2rem auto;
+  font-size: 2rem;
+  color: #bcb4b4;
+}
+
+.notesContainer {
+  height: calc(100vh - 250px);
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.notesContainer::-webkit-scrollbar {
+  width: 5px;
+}
+
+.notesContainer::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+  border-radius: 50px;
+  outline: none;
+}
+
+.note {
+  background-color: #01d439;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 1rem;
+  width: 95%;
+  margin: 1rem auto;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.note.active {
+  background-color: #00a82d;
+}
+
+.note:hover {
+  background-color: #00a82d;
+}

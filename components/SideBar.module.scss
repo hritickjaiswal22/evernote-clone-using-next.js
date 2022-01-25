@@ -1,0 +1,23 @@
+.sidebar {
+  width: 25rem;
+  background-color: #3e3e3e;
+  color: #fff;
+  min-height: 100vh;
+
+  &__inputSection {
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+  }
+
+  &__input {
+    padding: 0.5rem;
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    font-size: 2rem;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    margin-top: 1rem;
+  }
+}

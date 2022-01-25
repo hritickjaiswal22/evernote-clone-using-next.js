@@ -1,9 +1,10 @@
 .btn {
+  display: block;
   padding: 1rem 3rem;
   outline: none;
   border: none;
   border-radius: 0.5rem;
-  margin: 3rem 0;
+  margin: 3rem auto;
   cursor: pointer;
   width: 90%;
   max-width: 25rem;
